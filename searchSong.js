@@ -18,9 +18,9 @@ async function searchSong(songName) {
     const track = data.tracks.items[0];
 
     if (track) {
-      console.log(`🎵 Song: ${track.name}`);
-      console.log(`👨‍🎤 Artist: ${track.artists.map((a) => a.name).join(", ")}`);
-      console.log(`🔗 Spotify URL: ${track.external_urls.spotify}`);
+      console.log(`Song: ${track.name}`);
+      console.log(`Artist: ${track.artists.map((a) => a.name).join(", ")}`);
+      console.log(`Spotify URL: ${track.external_urls.spotify}`);
     } else {
       console.log("No song found!");
     }
